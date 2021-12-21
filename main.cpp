@@ -209,8 +209,8 @@ int main(void){
                 bulletsCount = 0;
                 enemies[0] = {{600, 360, 40, 40}, YELLOW , 3, 100, 600, 1, enemySprite, 2, {(Bullet){(Vector2){0, 0}, -300, 0 }, (Bullet){(Vector2){0, 0}, 300, 0 }}};
                 enemies[1] = {{700, 260, 40, 40}, YELLOW , 3, 100, 700, 1, LoadTexture("enemy1.png"), 1, {(Bullet){(Vector2){0, 0}, -300, 0 }, (Bullet){(Vector2){0, 0}, 300, 0 }}};
-                enemies[2] = {{1000, 360, 40, 40}, YELLOW , 3, 100, 1000, 1, enemySprite, 2, {(Bullet){(Vector2){0, 0}, -300, 0 }, (Bullet){(Vector2){0, 0}, 300, 0 }}}
-                enemies[3] = {{2150, 140, 40, 40}, YELLOW , 3, 100, 2150, 1, LoadTexture("enemy1.png"), 1, {(Bullet){(Vector2){0, 0}, -300, 0 }, (Bullet){(Vector2){0, 0}, 300, 0 }}}
+                enemies[2] = {{1000, 360, 40, 40}, YELLOW , 3, 100, 1000, 1, enemySprite, 2, {(Bullet){(Vector2){0, 0}, -300, 0 }, (Bullet){(Vector2){0, 0}, 300, 0 }}};
+                enemies[3] = {{2150, 140, 40, 40}, YELLOW , 3, 100, 2150, 1, LoadTexture("enemy1.png"), 1, {(Bullet){(Vector2){0, 0}, -300, 0 }, (Bullet){(Vector2){0, 0}, 300, 0 }}};
                 bulletsCount += 1;
                 bullets = (Bullet*) realloc(bullets, bulletsCount * sizeof(Bullet));
                 bullets[bulletsCount-1] = {(Vector2){0, 0}, -400, 0 };
